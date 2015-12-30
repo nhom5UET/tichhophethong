@@ -1,0 +1,48 @@
+<%@page contentType="text/html"%>
+<%@page pageEncoding="UTF-8"%>
+<%@page import = "java.util.*"%>
+<%@page import = "coshms.util.radiology.*"%>
+
+<%--
+The taglib directive below imports the JSTL library. If you uncomment it,
+you must also add the JSTL library to the project. The Add Library... action
+on Libraries node in Projects view can be used to add the JSTL 1.1 library.
+--%>
+<%--
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%> 
+--%>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<jsp:useBean id="radData" scope="page" class="coshms.beans.RadAvailableTestsDataBean" />
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Radiology Report Viewer</title>
+    </head>
+    <body >
+        <center>
+        <img src="images/logo.gif" />
+
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <td colspan="3" height="3"></td>
+        </tr>
+        <tr>
+            <td width="8" align="right"><img src="images/left.gif" height="32" /></td>
+
+          <td width="992" background="images/pixi_bg.gif" class="genArlBFont">&nbsp;</td>
+            <td width="10" align="left"><img src="images/right.gif"  height="32" /></td>
+        </tr>
+        </table>
+
+        
+        <h1 align="center" style="font-family:Verdana;color:grey;">Department of Radiology</h1>
+        </center>
+
+        <h3 align="left">Notes : </h3>
+   <textarea name="notes" rows="4" cols="80" readonly>
+       <%=request.getParameter("notes")%>
+   </textarea>
+    </body>
+</html>

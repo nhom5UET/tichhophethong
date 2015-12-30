@@ -1,0 +1,3 @@
+<?php
+
+echoT($strCalendar);

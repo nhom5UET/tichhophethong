@@ -1,0 +1,180 @@
+/* CSS Document */
+a{color:#000000;text-decoration:none}
+
+a:hover{
+	text-decoration: underline;
+}
+/*background-color:#CCCCCC*/
+
+DIV,p,form, fieldset, h1, h2, h3, h4, h5, h6 {margin:0; padding:0}
+
+p{font-family: courier new, courier, verdana, arial, sans-serif}
+
+.leftMenu{font-family: arial, courier new; font-size:x-small}
+
+.genFont{ font-family: "Verdana"; color: #000000; font-size: 8pt}
+
+.genFrontFont{ font-family: "Verdana"; color: #575858; font-size: 8pt}
+
+.gen9Font{ font-family: "Verdana"; color: #000000; font-size: 9pt}
+
+.genBFont{
+	font-family: Verdana;
+	color: #000000;
+	font-size: 8pt;
+    font-weight: bold;
+}
+.genLoginTag{
+	font-family: Verdana;
+	color: #FFFFFF;
+	font-size: 8pt;
+}
+.genSmallBold{
+	font-family: Verdana;
+	color: #FFFFFF;
+    font-weight: bold;
+	font-size: 7pt;
+}
+.genArlBFont{
+	font-family: Arial;
+	color: white;
+	font-size: 12pt;
+    font-weight: bold;
+}
+
+.genHeadingFont{
+	font-family: Arial;
+	color: #7C7B7B;
+	font-size: 12pt;
+    font-weight: bold;
+}
+
+.inputField {
+	border:1 solid #908D8D;
+	BACKGROUND-COLOR: #EBEBEB;
+	font-size:10pt;
+}
+
+.btnFormat {
+	font-family: Verdana;
+	font-size:8pt;
+	border:1 solid #908D8D;
+	position:relative;
+	BACKGROUND-COLOR: #EBEBEB;
+	height: 20px;
+	width: 70px;
+	text-align: center;
+	left: 0px;
+}
+
+.btnSmallFormat {
+	font-family: Verdana;
+	font-size:8pt;
+	border:1 solid #908D8D;
+	position:relative;
+	BACKGROUND-COLOR: #EBEBEB;
+	height: 20px;
+	width: 18px;
+	text-align: center;
+	left: 0px;
+}
+
+.menuFormat {
+	font-family: Verdana;
+	font-size:8pt;
+	border:1 solid #908D8D;
+	position:relative;
+	BACKGROUND-COLOR: #EBEBEB;
+	left: 0px;
+}
+
+.btnLargeFormat {
+
+	font-family: Verdana;
+	font-size:8pt;
+	border:1 solid #908D8D;
+	position:relative;
+	BACKGROUND-COLOR: #EBEBEB;
+	text-align: center;
+	height: 20px;
+	left: 0px;
+}
+
+
+.required {
+	color: #FF0000;
+}
+
+.reqMessage {
+	background-color: #F2F4FD;
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 7pt;
+	color: #003366;
+}
+
+
+
+.menueTable {
+	border: 1px solid #6C6C6C ; background-color: #F9F9F9 ;
+}
+
+
+.normalBorderTable {
+	border: 1px solid  #6C6C6C  ;
+}
+
+.sep {
+	color: #999999;
+}
+
+.textArea {
+	border:1 solid #908D8D;
+	BACKGROUND-COLOR: #EBEBEB;
+}
+
+.listBox{/*
+	border:1 solid #908D8D;
+	BACKGROUND-COLOR: #EBEBEB;
+	font-family: Verdana;*/
+	BORDER-RIGHT: #908D8D 1px solid; 
+	BORDER-TOP: #908D8D 1px solid; 
+	BORDER-BOTTOM: #908D8D 1px solid;
+	BORDER-LEFT: #908D8D 1px solid; 
+	FONT-FAMILY: Verdana; 
+	BACKGROUND-COLOR: #EBEBEB;
+}
+
+.odd{background-color: #EBEBEB;} 
+ .even{background-color:WHITE ;} 
+ 
+.topborder {
+	BORDER-TOP: #E1DFDF 1px solid;
+}
+
+.topDotedborder {
+	border-bottom: #8B8B8B 1px dashed;
+}
+/************styles for hyperlinking***************/
+A {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A:hover {
+	TEXT-DECORATION: underline
+}
+A:active {
+	TEXT-DECORATION: none
+}
+
+
+A.nav {
+	FONT-WEIGHT: normal; COLOR: #000000; TEXT-DECORATION: none
+}
+A.nav:hover {
+	FONT-WEIGHT: normal; COLOR: #FFFFFF; TEXT-DECORATION: none
+}
+A.nav:active {
+	FONT-WEIGHT: normal; COLOR: #000000; TEXT-DECORATION: none
+}
+A.small {
+	font-size: 8pt; COLOR: #FFFFFF; TEXT-DECORATION: none; FONT-FAMILY: Verdana; 
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<p><a href="#sessionH">Passing Parameter b/w Servlets and JSP Pages</a></p>
+<p><a href="#session">Using Session Object:</a><br>
+  <a href="#reqD">Using Request Dispatcher:</a></p>
+<p><strong>Passing Parameter b/w Servlets and JSP Pages<a name="sessionH"></a></strong></p>
+<p> <strong>Using Session Object:<a name="session"></a><br>
+  </strong>HttpSession session = request.getSession();<br>
+  session.setAttribute(&quot;patient&quot;,pt); //where pt is Patient Object</p>
+<p>When getting back:<br>
+  Patient pt = (Patient)session.getAttribute(&quot;patient&quot;);</p>
+<p><strong>Using Request Dispatcher:<a name="reqD"></a></strong><br>
+  In servlet:<br>
+  RequestDispatcher dispatcher = request.getRequestDispatcher(&quot;SearchResults.jsp&quot;);<br>
+  request.setAttribute(&quot;patient&quot;,pt);<br>
+  dispatcher.forward(request,response);</p>
+<p>In JSP Page:<br>
+  Patient pt = (Patient)request.getAttribute(&quot;patient&quot;);</p>
+</body>
+</html>
+
+<%@page contentType="text/html"%>
+<%@page pageEncoding="UTF-8"%>
+<%@page 
+import="coshms.ejb.domain.RegisterPatientRemote" 
+import="coshms.util.EJBAccessPoint"
+import="coshms.util.domain.Patient"
+import="java.util.ArrayList"
+%>
+
+
+  <%
+        EJBAccessPoint ejbAP = new EJBAccessPoint();
+        
+        Patient pt = (Patient)request.getAttribute("patient");
+        RegisterPatientRemote regPtRem = ejbAP.lookupRegisterPatientBean();
+        ArrayList list = regPtRem.searchPatient(pt);    
+        %>
+<%=list.toString()%>
+
+                               <%if (empName != null){%>
+                                <%=empName%> (<%=designation%>) - <a href="PthLogout" class="small">Logout</a>
+                                <%}%>
+                                
+                                
+                                

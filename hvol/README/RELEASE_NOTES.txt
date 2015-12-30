@@ -1,0 +1,11 @@
+==============================================================================
+   Hospice Volunteer Solutions - Volunteers Helping Volunteers
+   www.HospiceVolunteerSolutions.org
+==============================================================================
+
+RELEASE INFORMATION
+-------------------
+    date         software ver.     db ver.    notes
+    ----------   -------------   ----------   ---------------------------------------------
+    2015-08-04      1.000          1.000      - Initial release
+

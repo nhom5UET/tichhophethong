@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title> ICD-10 Disease Set</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+<link href="images/styles_newPatient.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript" src="../scripts/icd10.js"></script>
+<link href="../images/styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<form name="icd10" action="SearchDisease.jsp" method="GET">
+<center>
+    <br/>    
+    <table width="50%" border="0" cellspacing="1" cellpadding="1" >
+      <tr>
+    <td width="559"  class="topDotedborder"><div class="genHeadingFont">ICD-10</div></td>
+  </tr>
+  <tr>
+    <td height="181"><table width="99%" border="0" cellspacing="1" cellpadding="1" >
+            <tr> 
+              <td height="37" colspan="2" align="center" class="genFont">&nbsp;</td>
+            </tr>
+            <tr> 
+              <td colspan="2" align="center" class="genFont"> <img src="../images/icd-10.gif" width="267" height="100" /></td>
+            </tr>
+            <tr> 
+              <td height="31" colspan="2" class="genFont">&nbsp;</td>
+            </tr>
+            <tr> 
+              <td width="19%" height="31" class="genFont">&nbsp;</td>
+              <td width="81%" class="genFont">Enter Disease Keyword:</td>
+            </tr>
+            <tr> 
+              <td height="50" align="center" valign="middle" class="genFont"> 
+                <div align="left"> </div></td>
+              <td height="50" align="center" valign="middle" class="genFont"><div align="left">
+                  <input type="text" name="diseaseSubString"   size="30" class="inputField"/>
+                  <input name="submit" type="submit" class="btnFormat"  onclick="return isDiseaseNull();" value="Search"/>
+                </div></td>
+            </tr>
+          </table></td>
+  </tr>
+</table>
+    </center>
+</form>
+</body>
+</html>
